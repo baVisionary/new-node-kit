@@ -1,0 +1,16 @@
+
+
+<h1><%= message %></h1>
+<% if (error.status) {   %>
+<h2>Status: <%= error.status %></h2>
+<%
+ }
+  %>
+<% if (error.stack) {
+  for (var i=0; i < error.stack.length; i++) { %>
+  <pre>Status: <%= error.stack[i].status %></pre>
+  <pre>Status: <%= error.stack[i].message %></pre>
+
+<%  }
+ }
+  %>

@@ -1,0 +1,15 @@
+<form action="movies/add" method="POST">
+
+    <% if (editing) { %>
+     <h1>Editing a Movie:</h1>
+    <input type="text" name="_id" value=" <%= adding._id %>" hidden="">
+    <%  } else if (adding) { %>
+         <h1>Add a Movie:</h1>
+    <% } %>
+
+  <label for="title">Title:</label>
+  <input type="text" name="title" value=" <%= adding.title %>">
+  <label for="title">Genre:</label>
+  <input type="text" name="genre" value=" <%= adding.genre %>">
+<button class='btn btn-primary' >Submit</button>
+</form>

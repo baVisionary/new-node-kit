@@ -1,0 +1,15 @@
+<div>
+<h1>Movies List:</h1>
+<ul>
+
+    <%_   for (var i=0; i < movies.length; i++) { _%>
+    <div>
+      <div ></div> <div class='row'><li><a href="/movies?command=edit&id=<%= movies[i]._id %>" class='btn btn-primary'>Edit</a> <a href="/movies/delete/<%= movies[i]._id %>" class='btn btn-primary'>Delete</a>   Movie Title: <%= movies[i].title %> Genre:<%= movies[i].genre %> </li></div>
+
+    </div>
+    <%_  }
+      _%>
+</ul>
+<h4> Total number of movies is <%= movies.length %> </h4>
+<a href="movies?command=add" class='btn btn-primary'>Add Movie</a>
+</div>

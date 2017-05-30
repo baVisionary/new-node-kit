@@ -1,0 +1,73 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import "vars";
+@import "mixins";
+@import "topo";
+@import "pages";
+@import "forms";
+
+//styles for google login
+.loginheader{
+font-size: @font-base-size+ 15px
+
+}
+.googleplus{
+  font-size: @font-base-size+ 25px
+}
+
+.headerlogo {
+    float: left;
+    margin-right: 10px;
+}
+.headerlogo > img {
+        width: 60%
+
+    }
+
+#headername {
+    font-size: @font-base-size * 3.57;
+    font-family: @font-family;
+    .text-shadow(@text-shadow-color);
+    color: @primary-color;
+    padding: 15px;
+    margin: 8px 0px;
+    font-weight: bold;
+}
+.searchbox {
+    float: right;
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
+}
+
+
+.welcomeimage  {
+    float: left;
+    align-content: center;
+    width: 700px;
+}
+
+#productofthemonth {
+    float: right;
+    width: 290px;
+}
+
+.welcometext {
+    align-content: center;
+    width: 70%;
+    font-size: @font-base-size;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .column-count(2);
+}
+
+#welcometext > header {
+        color: #603813;
+        font-size: @font-base-size + 10;
+        font-weight: bold;
+        margin-bottom: 3px;
+    }
+
+    .smalltext {
+        font-size: @font-base-size - 6;
+    }

@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Head.ejs --->
+<% include ../partials/head %>
+</head>
+
+<body>
+<header>
+<!-- Header.ejs --->
+<% include ../partials/header %>
+</header>
+<main>
+  <div>
+    <image src='<%= user.name %>'></image>
+    <%= user.name %>
+  </div>
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+</body>
+</html>

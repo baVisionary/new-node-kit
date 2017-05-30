@@ -1,0 +1,20 @@
+{
+  "name": "myClient",
+  "description": "A Coder Camps JS application.",
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "es6-promise": "^4.0.5",
+    "es6-collections": "^0.5.6",
+    "jquery": "^3.1.1"
+  }
+}

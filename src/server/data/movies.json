@@ -1,0 +1,39 @@
+/** This is a mock movie file */
+[
+    {
+        "id": 1017109,
+        "title": "Juno",
+        "genre": "Drama",
+        "thumbnail": "juno.jpg"
+    },
+    {
+        "id": 1017105,
+        "title": "Star Wars",
+        "genre": "Sy-Fy",
+        "thumbnail": "juno.jpg"
+    },
+    {
+        "id": 1017108,
+        "title": "Big",
+        "genre": "Sy-Fy",
+        "thumbnail": "juno.jpg"
+    },
+    {
+        "id": 1017104,
+        "title": "Juno",
+        "genre": "Drama",
+        "thumbnail": "juno.jpg"
+    },
+    {
+        "id": 1017106,
+        "title": "IRObot",
+        "genre": "Sy-Fy",
+        "thumbnail": "juno.jpg"
+    },
+    {
+        "id": 4444441,
+        "title": "Logan",
+        "genre": "Sy-Fy",
+        "thumbnail": "juno.jpg"
+    }
+]

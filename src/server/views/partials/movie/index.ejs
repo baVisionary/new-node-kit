@@ -1,0 +1,19 @@
+<h1>Movies List:</h1>
+<ul>
+  <% if (movies) {
+    for (var i=0; i < movies.length; i++) { %>
+    <div>
+      <div class='row'></div> <div><li> Movie Title: <%= movies[i].title %> Genre:<%= movies[i].genre %> </li></div>
+
+    </div>
+
+
+    <%  }
+      %>
+      <h4> Total number of movies is <%= movies.length %> </h4>
+      <button id="addButton" class='btn btn-primary'>Add a Movie</button>
+  <%  }
+    %>
+
+
+</ul>

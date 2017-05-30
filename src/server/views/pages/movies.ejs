@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Head.ejs --->
+<% include ../partials/head %>
+
+</head>
+
+<body>
+<header>
+<!-- Header.ejs --->
+<% include ../partials/header %>
+</header>
+<main>
+
+  <!-- Inject or load Modules Here --->
+  <div class='row'>
+
+  <div id='movieApp' class="col-xs-12">
+  <% if (movies) {  %>
+  <% include ../partials/movie/list %>
+  <%  }   else if (adding) { %>
+      <% include ../partials/movie/addmovie %>
+  <% } %>
+
+  </div>
+
+
+  </div>
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+</body>
+</html>

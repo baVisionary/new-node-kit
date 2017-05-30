@@ -1,0 +1,57 @@
+<!-- This file is our Basic Layout Template. This file is the main site wrapper for the modules we will load
+     This Template will uses bootstrap jQuery and Fetch to build out our client side applications
+      and ejs to server up the page  and partial templates
+--->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+The htmlWebpackPlugin will parse the logic below so that trackJS is only added to the production version of index.html (since only webpack.config.prod.js provides the trackJS token)
+This is an example of how to add features to index.html for only one environment.
+-->
+<% if (htmlWebpackPlugin.options.trackJSToken) { %>
+<!-- BEGIN TRACKJS -->
+<script type="text/javascript">window._trackJs = { token: '<%=htmlWebpackPlugin.options.trackJSToken%>' };</script>
+<script type="text/javascript" src="https://cdn.trackjs.com/releases/current/tracker.js"></script>
+<!-- END TRACKJS -->
+<% } %>
+ <meta charset="UTF-8">
+ <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+  <header>
+    <div>
+        <a class="headerlogo" href="index.html">
+            <img src="images/film.png" />
+        </a>
+        <span id="headername">Movie Information Center</span>
+
+    </div>
+    <nav class="navbar-background">
+        <ul>
+            <!-- Build the Navigation Bar for your wep page here --->
+          <li><a class="navlink" href="/">Home</a></li>
+          <li><a class="navlink" href="/movies">Movies</a></li>
+          <input type="search" class="searchbox pull-right" placeholder="Search" />
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="jumbotron row">
+      <div class="col-xs-12">
+      <img class='welcomeimage' src="images/movielogo.png" />
+      <div class='col-xs-6 '><h2>Welcome to the Movie Information Center</h2></div>
+
+      </div>
+
+    </div>
+
+ </main>
+
+  <footer>
+    <div class='row footer'><em>Created by:<em> John Doe<em> <i class='fa fa-microphone'></i> 888-777-9999 <p class="pull-right "> @CoderCamps 2017 : MIT</p> </div>
+
+  </footer>
+</body>
+</html>
